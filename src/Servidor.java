@@ -48,12 +48,12 @@ public class Servidor {
                 System.out.println("Remetente pacote 2: "+ pacoteConfiguracao.getSocketAddress().toString());
                 System.out.println("PORTA pacote 2: "+ pacoteConfiguracao.getPort());
                 
-                FileWriter arq2 = new FileWriter("C:\\Users\\Rafael\\Documents\\Faculdade\\8º Periodo\\Sistemas Distribuídos\\Trabalhos\\Trabalhos UDP\\Configuração" + String.valueOf(texto) + ".txt");
+                FileWriter arq2 = new FileWriter("C:\\Users\\Rafael\\Documents\\NetBeansProjects\\Sistemas Distribuidos\\Trabalho SD\\Trabalho UDP\\Trabalhos UDP\\Configuração" + String.valueOf(texto) + ".txt");
                 PrintWriter gravarArq2 = new PrintWriter(arq2);
                 gravarArq2.printf(new String(pacoteConfiguracao.getData(), 0, pacoteConfiguracao.getLength()));
                 arq2.close();
                 
-                FileWriter arq = new FileWriter("C:\\Users\\Rafael\\Documents\\Faculdade\\8º Periodo\\Sistemas Distribuídos\\Trabalhos\\Trabalhos UDP\\Pacotes " + String.valueOf(texto) + ".txt");
+                FileWriter arq = new FileWriter("C:\\Users\\Rafael\\Documents\\NetBeansProjects\\Sistemas Distribuidos\\Trabalho SD\\Trabalho UDP\\Trabalhos UDP\\Pacotes " + String.valueOf(texto) + ".txt");
                 PrintWriter gravarArq = new PrintWriter(arq);
                 gravarArq.printf(new String(pacote.getData(), 0, pacote.getLength()));
                 arq.close();
